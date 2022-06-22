@@ -1,3 +1,6 @@
+#ifndef MULTITYPECONTAINER_H
+#define MULTITYPECONTAINER_H
+
 #include <vector>
 #include <unordered_map>
 #include <memory>
@@ -41,3 +44,5 @@ public:
         return std::static_pointer_cast<Cont<T>>(_vectors[hash_t<T>::value])->get();
     }
 };
+
+#endif // MULTITYPECONTAINER_H
