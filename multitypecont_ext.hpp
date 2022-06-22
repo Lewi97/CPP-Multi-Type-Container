@@ -1,7 +1,10 @@
+#ifndef MULTITYPECONTAINER_EXT_H
+#define MULTITYPECONTAINER_EXT_H
+
 #include <vector>
 #include <unordered_map>
 #include <memory>
-#include "../tools/constexpr-typehashing.hpp"
+#include "tools/constexpr-typehashing.hpp"
 
 #define REGISTER_TYPE_CONTAINER(TYPE, CONTAINER) template<> struct container_hint<TYPE> final { using container_t = CONTAINER; };
 #define CONTAINER_TYPE typename container_hint<T>::container_t
@@ -50,3 +53,5 @@ public:
     }
 };
 } // namespace experimental
+
+#endif // MULTITYPECONTAINER_EXT_H
