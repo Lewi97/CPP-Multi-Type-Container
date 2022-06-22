@@ -1,3 +1,6 @@
+#ifndef CONSTEXPR_TYPEHASHING_H
+#define CONSTEXPR_TYPEHASHING_H
+
 #include <cstddef>
 #include <cstdint>
 // Adapted from https://gist.github.com/ktf/b51547b25f6467b2fb352d239b6080e2
@@ -55,3 +58,5 @@ public:
         return h;
     }
 };
+
+#endif // CONSTEXPR_TYPEHASHING_H
