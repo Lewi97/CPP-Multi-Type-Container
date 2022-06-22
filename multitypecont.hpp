@@ -4,7 +4,7 @@
 #include <vector>
 #include <unordered_map>
 #include <memory>
-#include "../tools/constexpr-typehashing.hpp"
+#include "tools/constexpr-typehashing.hpp"
 
 struct Base {};
 
