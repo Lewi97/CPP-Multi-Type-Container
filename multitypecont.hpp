@@ -38,7 +38,7 @@ public:
         std::static_pointer_cast<Cont<T>>(_vectors[h])->push_back(val);
     }
 
-    // returns: shared_ptr<std::vector<T>>
+    // returns: std::vector<T>&
     template<typename T> auto& get()
     {
         return std::static_pointer_cast<Cont<T>>(_vectors[hash_t<T>::value])->get();

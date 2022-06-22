@@ -47,6 +47,7 @@ public:
         std::static_pointer_cast<Cont<T, CONTAINER_TYPE>>(_vectors[h])->push_back(val);
     }
 
+    // returns: Container<T>
     template<typename T> auto& get()
     {
         return std::static_pointer_cast<Cont<T, CONTAINER_TYPE>>(_vectors[hash_t<T>::value])->get();
