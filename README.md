@@ -28,6 +28,7 @@ int main()
     core.get<Foo>().begin()->invoke();
     core.get<Bar>().begin()->invoke();
 
+    /* Can also retrieve the underlying containers in a tuple */
     auto&& [foo, bar] = core.get<Foo, Bar>();
     foo.begin()->invoke();
     bar.begin()->invoke();
