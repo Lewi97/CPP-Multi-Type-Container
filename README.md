@@ -1,5 +1,12 @@
 # A cpp multi type vector
 
+# Adding types
+Types can be with ``push_back`` and ``emplace_back`` which will call the respective function of the underlying vector.
+
+# Retrieving types
+Retrieving a container of types can be done with ``get<Type>()``, returning multiple types is also allowed ''get<Type, Type2>()``.
+
+# Examples
 ```cpp
 struct Foo
 {
@@ -27,4 +34,4 @@ int main()
 }
 ```
 Produces the following output:
-``Foobar``
+``FoobarFoobar``
