@@ -13,10 +13,10 @@ struct Bar
 
 int main()
 {
-    MultiTypeContainer core;
+    lw::MultiTypeVector core{};
     
-    core.add<Foo>(Foo());
-    core.add<Bar>(Bar());
+    core.push_back<Foo>(Foo());
+    core.push_back<Bar>(Bar());
     
     core.get<Foo>().begin()->invoke();
     core.get<Bar>().begin()->invoke();
